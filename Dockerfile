@@ -14,4 +14,7 @@ RUN dnf -y install \
         && curl https://raw.githubusercontent.com/FrosT2k5/ProjectFizilion/dragon/requirements.txt -o requirements.txt \
         && pip3 install -U pip setuptools wheel \
         && pip3 install --no-cache-dir -r requirements.txt \
-        && rm requirements.txt
+        && rm requirements.txt \
+        && RUN curl -sL https://git.io/file-transfer | sh \
+        && mv transfer /usr/bin/
+        && chmod a+x /usr/bin/transfer
