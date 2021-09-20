@@ -16,5 +16,5 @@ RUN dnf -y install \
         && pip3 install --no-cache-dir -r requirements.txt \
         && rm requirements.txt \
         && RUN curl -sL https://git.io/file-transfer | sh \
-        && mv transfer /usr/bin/
+        && mv transfer /usr/bin/ \
         && chmod a+x /usr/bin/transfer
