@@ -9,7 +9,7 @@ RUN dnf -y install \
         && dnf -y install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
         && dnf -y install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm \
         && dnf -y install \
-        aria2 chromium ffmpeg \
+        aria2 chromium chromedriver ffmpeg \
         figlet gcc gzip \
         && curl https://raw.githubusercontent.com/FrosT2k5/ProjectFizilion/dragon/requirements.txt -o requirements.txt \
         && pip3 install -U pip setuptools wheel \
